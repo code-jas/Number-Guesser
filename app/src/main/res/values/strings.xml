@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Number Guesser</string>
+    <string name="bot_name">Hi I am Zen Bot</string>
+    <string name="bot_problem">I am thinking of a number between 1–100. Can you guess it ?</string>
+    <string name="btn_value">GUESS</string>
+    <string name="hint">Guess the number</string>
+    <string name="guess_result"> </string>
+    <string name="num_guess">Number of guesses:</string>
+    <string name="howmany_guess">Guesses number are :</string>
+
+</resources>

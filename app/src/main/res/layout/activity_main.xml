@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtGuessApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_black"
+        android:text="@string/app_name"
+        android:textColor="#3C3838"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBotName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/bot_name"
+        android:textColor="#3C3838"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtGuessApp"
+        app:layout_constraintStart_toStartOf="@+id/txtGuessApp"
+        app:layout_constraintTop_toBottomOf="@+id/txtGuessApp" />
+
+    <EditText
+        android:id="@+id/numInput"
+        android:layout_width="140dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_bold"
+        android:inputType="textPersonName"
+        android:text="20"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="@+id/guessDetails"
+        app:layout_constraintStart_toStartOf="@+id/guessDetails"
+        app:layout_constraintTop_toBottomOf="@+id/guessDetails" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGuess"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+
+        android:paddingBottom="0dp"
+
+        android:text="@string/btn_value"
+
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:cornerRadius="20dp"
+        app:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/numInput"
+        app:layout_constraintStart_toStartOf="@+id/numInput"
+        app:layout_constraintTop_toBottomOf="@+id/numInput"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/guessResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnGuess"
+        app:layout_constraintStart_toStartOf="@+id/btnGuess"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuess" />
+
+    <TextView
+        android:id="@+id/guessCount"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/num_guess"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/guessResult"
+        app:layout_constraintStart_toStartOf="@+id/guessResult"
+        app:layout_constraintTop_toBottomOf="@+id/guessResult" />
+
+    <TextView
+        android:id="@+id/guessesNumbers"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/howmany_guess"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/guessCount"
+        app:layout_constraintStart_toStartOf="@+id/guessCount"
+        app:layout_constraintTop_toBottomOf="@+id/guessCount" />
+
+    <TextView
+        android:id="@+id/guessDetails"
+        android:layout_width="290dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:letterSpacing="0.10"
+        android:text="@string/bot_problem"
+        android:textAlignment="center"
+        android:textColor="#4E4646"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtBotName"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/txtBotName"
+        app:layout_constraintTop_toBottomOf="@+id/txtBotName" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnReset"
+        android:layout_width="49dp"
+        android:layout_height="56dp"
+        app:icon="@drawable/ic_baseline_rotate_left_24"
+        app:iconGravity="textStart"
+        app:iconPadding="2dp"
+        app:iconSize="30dp"
+        android:layout_marginTop="68dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:visibility="gone"
+        android:paddingRight="0dp"
+
+
+        android:paddingBottom="0dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:cornerRadius="100dp"
+        app:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/guessesNumbers"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/guessesNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/guessesNumbers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
